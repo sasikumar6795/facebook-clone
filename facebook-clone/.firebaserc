@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "facebook-clone-4fc93": {
+      "hosting": {
+        "facebook-clone": [
+          "facebook-clone-4fc93"
+        ]
+      }
+    }
+  }
+}

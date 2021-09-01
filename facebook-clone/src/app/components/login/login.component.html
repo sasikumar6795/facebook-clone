@@ -7,9 +7,15 @@
     <div class="right">
         <mat-card class="right-card">
             <mat-card-content>
-                <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
-
-                </form>
+              <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+                <div>
+                  <input type="text" formControlName="email" placeholder="email">
+                </div>
+                <div>
+                  <input type="password" formControlName="password" placeholder="password">
+                </div>
+                <button  (class)="onSubmit()">SignIn</button>
+              </form>
             </mat-card-content>
         </mat-card>
     </div>

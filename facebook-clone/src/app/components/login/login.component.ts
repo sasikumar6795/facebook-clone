@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
     this.registrationForm = this.formBuilder.group(
       {
-        emailAddress: ['', Validators.required],
+        email: ['', Validators.required],
         password: ['', Validators.required]
       }
     )
@@ -23,7 +23,10 @@ export class LoginComponent implements OnInit {
 
   onSubmit()
   {
-    
+    if(this.registrationForm.invalid)
+    {
+      return;
+    }
   }
 
 }

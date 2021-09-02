@@ -1,11 +1,11 @@
 <div class="login-container">
-  <div class="login-header">
-    <div class="left">
-      <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="">
+  <header class="login-header">
+    <div class="login-header-left">
+      <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="logo">
       <h2>Facebook helps you connect and share with people in your life</h2>
     </div>
-    <div class="right">
-        <mat-card class="right-card">
+    <div class="login-header-right">
+        <mat-card class="login-header-right-card">
             <mat-card-content>
               <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
                 <div>
@@ -14,10 +14,16 @@
                 <div>
                   <input type="password" formControlName="password" placeholder="password">
                 </div>
-                <button  (class)="onSubmit()">SignIn</button>
+                <button class="login-button" (class)="onSubmit()">SignIn</button>
               </form>
+              <a href="#">Forgotten account?</a>
+              <button class="create-account" (click)="createAccount()">Create New Account</button>
             </mat-card-content>
         </mat-card>
+        <p class="tagline">Create a Page for a celebrity, band or business.</p>
     </div>
-  </div>
+  </header>
+  <footer>
+    <img src="../../../assets/loginFooter.PNG" alt="">
+  </footer>
 </div>
